@@ -1,2 +1,3 @@
-# godot-terminal-node
-Functional control node in Godot 4 that acts like a computer terminal with line-by-line history
+# GodoTerm
+A custom control node emulating a computer terminal (with working line-history!)
+
