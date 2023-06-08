@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://b08frycd6mmkt"]
+
+[ext_resource type="Theme" uid="uid://d6a7cfly331e" path="res://terminal/terminal.tres" id="1_xxsv8"]
+[ext_resource type="Script" path="res://terminal/terminal.gd" id="2_wjkro"]
+
+[node name="Console" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource("1_xxsv8")
+metadata/_edit_use_anchors_ = true
+
+[node name="Terminal" type="HFlowContainer" parent="."]
+custom_minimum_size = Vector2(510, 0)
+layout_mode = 2
+size_flags_vertical = 0
+script = ExtResource("2_wjkro")
+metadata/_edit_use_anchors_ = true
+
+[node name="Line" type="LineEdit" parent="Terminal"]
+custom_minimum_size = Vector2(510, 30)
+layout_mode = 2
+max_length = 34
+context_menu_enabled = false
+virtual_keyboard_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+caret_blink_interval = 0.5
+caret_mid_grapheme = false

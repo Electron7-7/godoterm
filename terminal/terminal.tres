@@ -1,0 +1,25 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://d6a7cfly331e"]
+
+[ext_resource type="FontFile" uid="uid://wr2thiw2cqne" path="res://fonts/Fira_Mono/FiraMono-Medium.ttf" id="1_qlru3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eeuo4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0pcer"]
+content_margin_left = 8.0
+content_margin_right = 8.0
+bg_color = Color(0, 0.0588235, 0.0509804, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ngd8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_efr7v"]
+bg_color = Color(0, 0.0588235, 0.0509804, 1)
+
+[resource]
+default_font = ExtResource("1_qlru3")
+default_font_size = 23
+HFlowContainer/constants/v_separation = 0
+LineEdit/constants/caret_width = 14
+LineEdit/styles/focus = SubResource("StyleBoxEmpty_eeuo4")
+LineEdit/styles/normal = SubResource("StyleBoxFlat_0pcer")
+LineEdit/styles/read_only = SubResource("StyleBoxEmpty_6ngd8")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_efr7v")
